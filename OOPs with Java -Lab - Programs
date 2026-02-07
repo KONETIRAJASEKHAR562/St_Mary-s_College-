@@ -4,7 +4,7 @@ Lab - 1:        Title: Setup Eclipse IDE &  run simple program
                 Aim: Use Eclipse or Net bean platform and acquaint yourself with the various 	menus. Create a test project, add a test class, and run it. See how 	you can use auto suggestions, auto fill. Try code formatter and code 	refactoring like renaming variables, methods, and classes. Try debug 	step by step with a small program of about 10 to 15 lines which 	contains at least one if else condition and a for loop.
                 
                 Objectives/Requirement: pc/laptop, eclipse IDE/bytexl platform, network, paper, pen.
-
+                Solution: 
                 Eclipse setup:
                 1)	Open browser, search “Eclipse Ide’”, then select  and click on 	‘eclipse foundation” site.
                 2)	Select and click on “ download button”, it goes new page, then select and click on “download button” again, then it show 2 options, click on “X86_64”.
@@ -66,7 +66,7 @@ Lab - 2                Title: OOP's Principles
                         Aim:  Write a Java program to demonstrate the OOP principles. [i.e., Encapsulation, Inheritance, Polymorphism and Abstraction]
 
                         Requirements/Objectives:  PC/ Laptop, ByteXL/eclipse IDE/ IntelliJ IDE (new bean platform), Network.
-
+                        Solution:
                         Source Code:
                         import java.util.*;
                         abstract class People {
@@ -177,9 +177,8 @@ Lab - 3:                Title : Exception Handling
                         Aim : Write a Java program to handle checked and unchecked exceptions. Also, demonstrate the usage of custom exceptions in real time scenario.
                         
                         Requirements/Objectives:  PC/ Laptop, ByteXL/eclipse IDE/ IntelliJ IDE (new bean platform), Network.
-                        
+                        Solution:
                         Source Code:
-                        
                         import java.io.*;
                         import java.util.Scanner;
                         class InsufficientBalanceException extends Exception {
@@ -273,7 +272,7 @@ Lab - 4:            Title : File Handling & It's Operation's
                     operations.
                     
                     Requirements/Objectives:  PC/ Laptop, ByteXL/eclipse IDE/ IntelliJ IDE (new bean platform), Network.
-                    
+                    Solution:
                     Source Code:
                     import java.io.*;
                     import java.util.Scanner;
