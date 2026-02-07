@@ -5,14 +5,6 @@ Lab - 1:        Title: Setup Eclipse IDE &  run simple program
                 
                 Objectives/Requirement: pc/laptop, eclipse IDE/bytexl platform, network, paper, pen.
                 Solution: 
-                Eclipse setup:
-                1)	Open browser, search “Eclipse Ide’”, then select  and click on 	‘eclipse foundation” site.
-                2)	Select and click on “ download button”, it goes new page, then select and click on “download button” again, then it show 2 options, click on “X86_64”.
-                3)	A new page will appear, again click on “ download button” then start downloading in few second’s.
-                4)	After download, double click on the application, after few mins, a new window will appear,
-                5)	After that select on the “ java for java developer’s”, next it will appear “ terms and condition’s” then click on “ ok”.
-                6)	After that click on the “ install” button. it takes few min’s to install all files, choose the “workplace” to save files. Click on “finish” button, then
-                7)	 Eclipse application will open.
 
                 Create an project/ project Folder:
                 8)	 Go to menu, select “ file “ and again select “new”  and gain select and click on
