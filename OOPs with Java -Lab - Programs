@@ -2,7 +2,10 @@
                                                         --------------------------
 Lab - 1:        Title: Setup Eclipse IDE &  run simple program 
                 Aim: Use Eclipse or Net bean platform and acquaint yourself with the various 	menus. Create a test project, add a test class, and run it. See how 	you can use auto suggestions, auto fill. Try code formatter and code 	refactoring like renaming variables, methods, and classes. Try debug 	step by step with a small program of about 10 to 15 lines which 	contains at least one if else condition and a for loop.
-                Solution:
+                
+                Objectives/Requirement: pc/laptop, eclipse IDE/bytexl platform, network, paper, pen.
+                Solution: 
+
                 Create an project/ project Folder:
                 8)	 Go to menu, select “ file “ and again select “new”  and gain select and click on
                  “ project”.
@@ -52,8 +55,9 @@ Lab - 1:        Title: Setup Eclipse IDE &  run simple program
 
 
 Lab - 2                Title: OOP's Principles
-                        Aim:  Write a Java program to demonstrate the OOP principles. [i.e., Encapsulation, Inheritance, Polymorphism and Abstraction
+                        Aim:  Write a Java program to demonstrate the OOP principles. [i.e., Encapsulation, Inheritance, Polymorphism and Abstraction]
 
+                        Requirements/Objectives:  PC/ Laptop, ByteXL/eclipse IDE/ IntelliJ IDE (new bean platform), Network.
                         Solution:
                         Source Code:
                         import java.util.*;
@@ -163,7 +167,8 @@ Lab - 2                Title: OOP's Principles
 
 Lab - 3:                Title : Exception Handling 
                         Aim : Write a Java program to handle checked and unchecked exceptions. Also, demonstrate the usage of custom exceptions in real time scenario.
-
+                        
+                        Requirements/Objectives:  PC/ Laptop, ByteXL/eclipse IDE/ IntelliJ IDE (new bean platform), Network.
                         Solution:
                         Source Code:
                         import java.io.*;
@@ -258,6 +263,7 @@ Lab - 4:            Title : File Handling & It's Operation's
                     Aim: Write a Java program on Random Access File class to perform different read and write
                     operations.
                     
+                    Requirements/Objectives:  PC/ Laptop, ByteXL/eclipse IDE/ IntelliJ IDE (new bean platform), Network.
                     Solution:
                     Source Code:
                     import java.io.*;
@@ -328,4 +334,14 @@ Lab - 4:            Title : File Handling & It's Operation's
                     
                     Enter string to append: AppendedText
                     Appended String: AppendedText
+
+
+
+Dates:
+Aiml - A           |   Aiml - b   | Aiml - c    |
+---------          |  ----------  |-----------  |
+lab 1 - 05/01/2026  | lab 1 -     | lab 1 -     |
+lab 2 - 19/01/2026  | lab 2 -     | lab 2 -     |
+lab 3 - 28/01/2026  | lab 3 -     | lab 3 -     | 
+lab 4 - 02/02/2026  | lab 4 -     |lab 4 -      |
 
