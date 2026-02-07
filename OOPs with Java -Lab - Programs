@@ -5,19 +5,19 @@ Lab - 1:        Title: Setup Eclipse IDE &  run simple program
                 
                 Objectives/Requirement: pc/laptop, eclipse IDE/bytexl platform, network, paper, pen.
                 Solution: 
-
+                Open Eclipse IDE: 
                 Create an project/ project Folder:
-                8)	 Go to menu, select “ file “ and again select “new”  and gain select and click on
+                1)	 Go to menu, select “ file “ and again select “new”  and gain select and click on
                  “ project”.
-                9)	Then a new window, will appear,  type the Project name  “ Aiml_your rlno”  and click on “ finish “ button.
-                10)	After that ,  “aiml- your rno” project folder you can see in the left side the Eclipse Environment.
+                2)	Then a new window, will appear,  type the Project name  “ Aiml_your rlno”  and click on “ finish “ button.
+                3)	After that ,  “aiml- your rno” project folder you can see in the left side the Eclipse Environment.
 
                 Create a java class/ file:
-                11)	 Click on  the arrow button “ >”, then select “ src” folder, click on the right button of the mouse. Select “new” and again select  and click on “ class”.
-                12)	A new window will appear,  type java file name as “ Lab1”   and then select required options and then click on “ finish” button.
-                13)	 Then a new java file will appear in the src  folder, momentously java fill  will open  in the environment.
+                4)	 Click on  the arrow button “ >”, then select “ src” folder, click on the right button of the mouse. Select “new” and again select  and click on “ class”.
+                5)	A new window will appear,  type java file name as “ Lab1”   and then select required options and then click on “ finish” button.
+                6)	 Then a new java file will appear in the src  folder, momentously java fill  will open  in the environment.
 
-                14)	Source code :
+                7)	Source code :
 
                  import java.util.Scanner;
                 public class Aiml_A {
@@ -47,11 +47,11 @@ Lab - 1:        Title: Setup Eclipse IDE &  run simple program
                     }
                 }
                 
-                15)	 Click on “ run” button on the menu.
-                16)	If errors will appear means correct it.
+           8)	 Click on “ run” button on the menu.
+           9)	 If errors will appear means correct it.
                 
-                Input:  17
-                Output:  17 is a prime number
+          10) Input:  17
+              Output:  17 is a prime number
 
 
 Lab - 2                Title: OOP's Principles
