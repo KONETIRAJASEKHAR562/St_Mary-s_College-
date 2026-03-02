@@ -455,12 +455,89 @@ Enter Value (String): Bob
 
 
 Lab 6 :         Title: 
-                Aim :
+                Aim : To write a Java program that demonstrates thread synchronization by allowing multiple threads to access the same reservation object without causing inconsistency in seat booking.
+                Source Code :
+                              import java.util.Scanner;
+                              class Reservation 
+                              {
+                                  private int availableSeats;
+                                  public Reservation(int seats) 
+                                  {
+                                      this.availableSeats = seats;
+                                  }
+                                  public synchronized void bookTicket(String name,int seatsRequired) 
+                                  {
+                                      System.out.println("\n" +name+" is trying to book "+seatsRequired+" seats.");
+                                      if (availableSeats >= seatsRequired) 
+                                      {
+                                          System.out.println("Booking successful for " + name);
+                                          availableSeats-=seatsRequired;
+                                          System.out.println("Seats left: " + availableSeats);
+                                      } else 
+                                      {
+                                          System.out.println("Booking failed for " + name + " (Not enough seats)");
+                                      }
+                                  }
+                              }
+                              
+                              class BookingThread extends Thread {
+                                  private Reservation reservation;
+                                  private String passengerName;
+                                  private int seats;
+                                  public BookingThread(Reservation reservation, String passengerName, int seats) {
+                                      this.reservation = reservation;
+                                      this.passengerName = passengerName;
+                                      this.seats = seats;
+                                  }
+                                  public void run() {
+                                      reservation.bookTicket(passengerName,seats);
+                                  }
+                              }
+                              public class Main {
+                                  public static void main(String[] args) {
+                                      Scanner sc = new Scanner(System.in);
+                                      System.out.print("Enter total available seats: ");
+                                      int totalSeats = sc.nextInt();
+                                      Reservation reservation =new Reservation(totalSeats);
+                                      System.out.print("Enter number of passengers: ");
+                                      int n = sc.nextInt();
+                                      sc.nextLine();
+                                      BookingThread[] threads = new BookingThread[n];
+                                      for (int i=0;i<n;i++) {
+                                          System.out.print("\nEnter passenger name: ");
+                                          String name = sc.nextLine();
+                                          System.out.print("Enter seats required: ");
+                                          int seats =sc.nextInt();
+                                          sc.nextLine();
+                                          threads[i] = new BookingThread(reservation,name,seats);
+                                      }
+                              
+                                      for (int i=0;i<n;i++) {
+                                          threads[i].start();
+                                      }
+                                      sc.close();
+                                  }
+                              }
 
+input :
+Enter total available seats: 5
+Enter number of passengers: 3
+Enter passenger name: Alice
+Enter seats required: 2
+Enter passenger name: Bob
+Enter seats required: 3
+Enter passenger name: Charlie
+Enter seats required: 2
 
-
-
-
+output:
+Alice is trying to book 2 seats.
+Booking successful for Alice
+Seats left: 3
+Bob is trying to book 3 seats.
+Booking successful for Bob
+Seats left: 0
+Charlie is trying to book 2 seats.
+Booking failed for Charlie (Not enough seats)
 
 
 
