@@ -454,7 +454,7 @@ Enter Value (String): Bob
 
 
 
-Lab 6 :         Title: 
+Lab 6 :         Title: Thread Synchronization
                 Aim : To write a Java program that demonstrates thread synchronization by allowing multiple threads to access the same reservation object without causing inconsistency in seat booking.
                 Source Code :
                               import java.util.Scanner;
@@ -559,10 +559,16 @@ Booking failed for Charlie (Not enough seats)
 
 
 Dates:
-Aiml - A           |   Aiml - b   | Aiml - c    |
----------          |  ----------  |-----------  |
-lab 1 - 05/01/2026  | lab 1 -     | lab 1 -     |
-lab 2 - 19/01/2026  | lab 2 -     | lab 2 -     |
-lab 3 - 28/01/2026  | lab 3 -     | lab 3 -     | 
-lab 4 - 02/02/2026  | lab 4 -     |lab 4 -      |
+Aiml - A           |   Aiml - b             | Aiml - c              | Aiml - D              |
+---------          |  ----------            |-----------            |-----------            |
+lab 1 - 05/01/2026  | lab 1 -  08/01/2026   | lab 1 -  20/12/2025   | lab 1 - 23/12/2025    |
+lab 2 - 19/01/2026  | lab 2 -  22/01/2026   | lab 2 -  27/12/2025   | lab 2 -  30/12/2025   |
+lab 3 - 28/01/2026  | lab 3 -  29/01/2026   | lab 3 -  03/01/2026   | lab 3 -  06/01/2026   |
+lab 4 - 02/02/2026  | lab 4 -  05/02/2026   | lab 4 -  30/01/2026   | lab 4 -  20/01/2026   |
+lab 5 - 11/02/2026  | lab 5 -  12/02/2026   | lab 4 -  07/02/2026   | lab 4 -  27/01/2026   |
+lab 6 - 18/02/2026  | lab 6 -  19/02/2026   | lab 4 -  20/02/2026   | lab 4 -  03/02/2026   |
+lab 7 - 04/03/2026  | lab 7 -  26/02/2026   | lab 4 -  27/02/2026   | lab 4 -  10/02/2026   |
+lab 8 - 11/03/2026  | lab 8 -  05/03/2026   | lab 4 -  06/03/2026   | lab 4 -  24/02/2026   |
+lab 9 - 16/03/2026  | lab 9 -  12/03/2026   | lab 4 -  13/03/2026   | lab 4 -  06/03/2026   |
+
 
