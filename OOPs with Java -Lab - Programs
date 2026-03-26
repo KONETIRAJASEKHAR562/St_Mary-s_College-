@@ -542,10 +542,117 @@ Booking failed for Charlie (Not enough seats)
 
 
 
+Lab - 9         Title: CRUD Operations using jdbc
+		
+		            Aim: Write a program to perform CRUD operations on the student table in a database using JDBC
+            		solution: 
+                  		1. At First create a table in the database 
+                  			CREATE TABLE student (id INT PRIMARY KEY, name VARCHAR(50),marks INT);
+                  		2. After that type the program in the IDE:
+                      import java.sql.*;
+                      import java.util.Scanner;
+                      public class st_B {
+                          public static void main(String[] args) {
+                              String url = "jdbc:mysql://localhost:3306/test";
+                              String user = "root";
+                              String password = "root";
+                              try (
+                                      Connection con = DriverManager.getConnection(url, user, password);
+                                      Scanner sc = new Scanner(System.in)
+                              ) {
+                                  int choice;
+                                  do {
+                                      System.out.println("\n1. Insert\n2. View\n3. Update\n4. Delete\n5. Exit");
+                                      System.out.print("Enter choice: ");
+                                      choice = sc.nextInt();
+                                      switch (choice) {
+                                          case 1:
+                                              // Inserting the values into the table 
+                                              System.out.print("Enter ID, Name, Marks: ");
+                                              int id = sc.nextInt();
+                                              String name = sc.next();
+                                              int marks = sc.nextInt();
+                                              PreparedStatement ps1 = con.prepareStatement(
+                                                      "INSERT INTO student VALUES (?, ?, ?)");
+                                              ps1.setInt(1, id);
+                                              ps1.setString(2, name);
+                                              ps1.setInt(3, marks);
+                                              ps1.executeUpdate();
+                                              System.out.println("Record Inserted");
+                                              ps1.close();
+                                              break;
+                      
+                                          case 2:
+                                              // Viewing the table informations or details
+                                              Statement stmt = con.createStatement();
+                                              ResultSet rs = stmt.executeQuery("SELECT * FROM student");
+                                              System.out.println("ID\tName\tMarks");
+                                              while (rs.next()) {
+                                                  System.out.println(
+                                                          rs.getInt(1) + "\t" +
+                                                                  rs.getString(2) + "\t" +
+                                                                  rs.getInt(3));
+                                              }
+                                              rs.close();
+                                              stmt.close();
+                                              break;
+                                          case 3:
+                                              // UPDATE
+                                              System.out.print("Enter ID and New Marks: ");
+                                              int uid = sc.nextInt();
+                                              int newMarks = sc.nextInt();
+                                              PreparedStatement ps2 = con.prepareStatement(
+                                                      "UPDATE student SET marks=? WHERE id=?");
+                                              ps2.setInt(1, newMarks);
+                                              ps2.setInt(2, uid);
+                                              int u = ps2.executeUpdate();
+                                              if (u > 0)
+                                                  System.out.println("Record Updated");
+                                              else
+                                                  System.out.println("Record Not Found");
+                                              ps2.close();
+                                              break;
+                      
+                                          case 4:
+                                              // Deleting the the table information with clause
+                                              System.out.print("Enter ID to delete: ");
+                                              int did = sc.nextInt();
+                                              PreparedStatement ps3 = con.prepareStatement(
+                                                      "DELETE FROM student WHERE id=?");
+                                              ps3.setInt(1, did);
+                                              int d = ps3.executeUpdate();
+                                              if (d > 0)
+                                                  System.out.println("Record Deleted");
+                                              else
+                                                  System.out.println("Record Not Found");
+                                              ps3.close();
+                                              break;
+                      
+                                          case 5:
+                                              System.out.println("Program Ended");
+                                              break;
+                                          default:
+                                              System.out.println("Invalid Choice");
+                                      }
+                      
+                                  } while (choice != 5);
+                              } catch (Exception e) {
+                                  System.out.println(e);
+                              }
+                          }
+                      }
 
 
 
-
+output/output:
+1. Insert
+2. View
+3. Update
+4. Delete
+5. Exit
+Enter choice: 1
+Enter ID, Name, Marks: 1 Ram 90
+Record Inserted
 
 
 
@@ -561,7 +668,7 @@ Booking failed for Charlie (Not enough seats)
 Dates:
 Aiml - A           |   Aiml - b             | Aiml - c              | Aiml - D              |
 ---------          |  ----------            |-----------            |-----------            |
-lab 1 - 05/01/2026  | lab 1 -  08/01/2026   | lab 1 -  20/12/2025   | lab 1 - 23/12/2025    |
+lab 1 - 05/01/2026  | lab 1 -  08/01/2026   | lab 1 -  20/12/2025   | lab 1 -  23/12/2025   |
 lab 2 - 19/01/2026  | lab 2 -  22/01/2026   | lab 2 -  27/12/2025   | lab 2 -  30/12/2025   |
 lab 3 - 28/01/2026  | lab 3 -  29/01/2026   | lab 3 -  03/01/2026   | lab 3 -  06/01/2026   |
 lab 4 - 02/02/2026  | lab 4 -  05/02/2026   | lab 4 -  30/01/2026   | lab 4 -  20/01/2026   |
