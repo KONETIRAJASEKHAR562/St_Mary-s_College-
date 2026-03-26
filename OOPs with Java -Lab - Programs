@@ -644,15 +644,6 @@ Lab - 9         Title: CRUD Operations using jdbc
 
 
 
-output/output:
-1. Insert
-2. View
-3. Update
-4. Delete
-5. Exit
-Enter choice: 1
-Enter ID, Name, Marks: 1 Ram 90
-Record Inserted
 
 
 
